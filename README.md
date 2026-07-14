@@ -1,4 +1,4 @@
-# AWS DynamoDB Cross-Account Replication Tool
+# aws-dynamodb-migrator
 
 ![CLI Demo](images/cli_demo.svg)
 
