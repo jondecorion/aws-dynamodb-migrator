@@ -54,7 +54,27 @@ When migrating very large tables, the script employs three mechanisms to keep th
    pip install -r requirements.txt
    ```
 
-3. Ensure your local terminal is authenticated with your AWS accounts (via standard credentials files or `aws sso login`).
+3. **AWS Authentication Setup:**
+   The tool automatically reads profiles configured in your local AWS shared credentials file. Make sure your profiles are defined in the credentials file.
+   
+   * **File Location:**
+     * **Windows:** `C:\Users\<YourUsername>\.aws\credentials` (or `%USERPROFILE%\.aws\credentials`)
+     * **macOS/Linux:** `~/.aws/credentials`
+     
+   * **Credentials Format Example:**
+     Add your source and target profiles to the file:
+     ```ini
+     [source-profile-name]
+     aws_access_key_id = YOUR_ACCESS_KEY_ID
+     aws_secret_access_key = YOUR_SECRET_ACCESS_KEY
+     # Include session token if using temporary credentials
+     aws_session_token = YOUR_SESSION_TOKEN
+     
+     [target-profile-name]
+     aws_access_key_id = YOUR_TARGET_ACCESS_KEY_ID
+     aws_secret_access_key = YOUR_TARGET_SECRET_ACCESS_KEY
+     aws_session_token = YOUR_TARGET_SESSION_TOKEN
+     ```
 
 ---
 
