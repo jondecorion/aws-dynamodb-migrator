@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="520" viewBox="0 0 800 520">
+  <rect width="800" height="520" rx="8" fill="#1e1e1e"/>
+  <!-- Window Header -->
+  <rect width="800" height="30" rx="8" fill="#323232"/>
+  <circle cx="20" cy="15" r="6" fill="#ff5f56"/>
+  <circle cx="40" cy="15" r="6" fill="#ffbd2e"/>
+  <circle cx="60" cy="15" r="6" fill="#27c93f"/>
+  <text x="400" y="20" fill="#a0a0a0" font-family="monospace" font-size="12" text-anchor="middle">migrate_ddb.py</text>
+  
+  <!-- Monospace Text Content -->
+  <g font-family="monospace" font-size="13" fill="#f1f1f1">
+    <text x="20" y="60" fill="#4fc1ff"># python migrate_ddb.py</text>
+    <text x="20" y="80" fill="#808080">=========================================================</text>
+    <text x="20" y="100" fill="#4ec9b0">   * DynamoDB Cross-Account Auto-Migration Wizard *</text>
+    <text x="20" y="120" fill="#808080">=========================================================</text>
+    
+    <text x="20" y="150" fill="#ff8000">--- [1] Source AWS Configuration ---</text>
+    
+    <text x="20" y="180">Select Source AWS Profile:</text>
+    <text x="40" y="200">[1] default</text>
+    <text x="40" y="220">[2] production-aws-account</text>
+    <text x="40" y="240">[3] development-aws-account</text>
+    <text x="40" y="260">[4] Enter profile manually</text>
+    <text x="20" y="280">Enter choice number: <tspan fill="#4fc1ff">2</tspan></text>
+    
+    <text x="20" y="300">Source AWS Region [us-east-1]: <tspan fill="#4fc1ff">us-east-1</tspan></text>
+    
+    <text x="20" y="330">Select Source DynamoDB Table Name:</text>
+    <text x="40" y="350">[1] production-orders-table</text>
+    <text x="40" y="370">[2] production-users-table</text>
+    <text x="40" y="390">[3] Enter Table Name manually</text>
+    <text x="20" y="410">Enter choice number: <tspan fill="#4fc1ff">1</tspan></text>
+    
+    <text x="20" y="440" fill="#6a9955">Parsing source schema... Found 4 Global Secondary Indexes (GSIs).</text>
+    <text x="20" y="460" fill="#6a9955">Item Count: ~1,250,000 items (320 MB). Concurrency: Spawning 16 parallel workers.</text>
+    <text x="20" y="480" fill="#4ec9b0">  Progress: 1250000 / 1250000 items copied (100.0%)</text>
+    <text x="20" y="500" fill="#4ec9b0">DynamoDB Cross-Account Replication Completed Successfully!</text>
+  </g>
+</svg>
